@@ -1,0 +1,270 @@
+import technova from "../assets/company_logos/technova.png";
+import DataScape from "../assets/company_logos/DataScape.png";
+import Innovil from "../assets/company_logos/Innovil.png";
+import SphereSales from "../assets/company_logos/SphereSales.png";
+import textflow from "../assets/company_logos/textflow.png";
+import storyCraft from "../assets/company_logos/storyCraft.png";
+
+export const jobDetails = [
+  {
+    id: 1,
+    title: "Frontend Developer",
+    category: "Development",
+    company: {
+      name: "TechNova",
+      logo: technova,
+      about:
+        "TechNova is an AI-driven SaaS startup on a mission to simplify enterprise workflows. Founded in 2018, we’re a team of 50+ across Bangalore and Pune.",
+      website: "https://technova.io",
+      industry: "SaaS / Enterprise Software",
+      size: "50–100 employees",
+      headquarters: "Bangalore, India",
+    },
+    location: "Bangalore, India",
+    type: "Full Time",
+    level: "Mid Level",
+    salary: "₹10L – ₹15L",
+    isRemote: true,
+    postedDate: "2025-05-01",
+    applyLink: "https://technova.io/careers/1234",
+    description: `
+    We’re looking for a passionate Frontend Developer to join our product team.
+    You’ll build and maintain responsive web interfaces using React and Tailwind,
+    collaborate with designers, and integrate with our Node.js APIs.
+  `,
+    applicants: 23,
+    responsibilities: [
+      "Develop and maintain React components",
+      "Optimize UI for performance and accessibility",
+      "Collaborate with UX/UI designers on new features",
+      "Write unit and integration tests",
+    ],
+    requirements: [
+      "3+ years of professional React experience",
+      "Strong CSS/Tailwind skills",
+      "Familiarity with RESTful APIs",
+      "Good communication and problem-solving skills",
+    ],
+    benefits: [
+      "Health insurance",
+      "Flexible working hours",
+      "Work-from-home stipend",
+      "Annual team retreats",
+    ],
+  },
+  {
+    id: 2,
+    title: "Data Analyst",
+    category: "Data & Analytics",
+    company: {
+      name: "DataScape",
+      logo: DataScape,
+      about:
+        "DataScape provides cutting-edge analytics solutions for e-commerce brands. Our team of 30+ data enthusiasts helps clients turn raw numbers into actionable insights.",
+      website: "https://datascape.ai",
+      industry: "Analytics / Big Data",
+      size: "30–50 employees",
+      headquarters: "Bangalore, India",
+    },
+    location: "Remote",
+    type: "Full Time",
+    level: "Mid Level",
+    salary: "₹8L – ₹12L",
+    isRemote: true,
+    postedDate: "2025-04-25",
+    applyLink: "https://datascape.ai/careers/data-analyst",
+    description:
+      "Analyze large datasets to uncover trends, build dashboards, and deliver reports that drive strategic decisions.",
+    applicants: 44,
+    responsibilities: [
+      "Collect, clean, and validate data from multiple sources",
+      "Create interactive dashboards with Power BI or Tableau",
+      "Perform statistical analysis and provide actionable insights",
+      "Collaborate with product and marketing teams on A/B tests",
+    ],
+    requirements: [
+      "2+ years in a Data Analyst role",
+      "Strong SQL skills and experience with Python/R",
+      "Familiarity with BI tools (Tableau, Power BI)",
+      "Excellent problem-solving and communication skills",
+    ],
+    benefits: [
+      "Health & dental insurance",
+      "Remote work stipend",
+      "Annual learning budget",
+      "Flexible working hours",
+    ],
+  },
+  {
+    id: 3,
+    title: "Product Manager",
+    category: "Product Management",
+    company: {
+      name: "Innovio",
+      logo: Innovil,
+      about:
+        "Innovio builds AI-powered productivity apps for small businesses. Founded in 2020, our 40-member team spans R&D, design, and customer success.",
+      website: "https://innovio.app",
+      industry: "SaaS / Productivity",
+      size: "40–60 employees",
+      headquarters: "Mumbai, India",
+    },
+    location: "Mumbai, India",
+    type: "Full Time",
+    level: "Senior",
+    salary: "₹15L – ₹20L",
+    isRemote: false,
+    postedDate: "2025-04-20",
+    applyLink: "https://innovio.app/careers/product-manager",
+    description:
+      "Lead end-to-end product development from ideation to launch, working closely with design, engineering, and marketing.",
+    applicants: 87,
+    responsibilities: [
+      "Define product roadmap and prioritize features",
+      "Conduct user research and competitive analysis",
+      "Write clear PRDs and user stories",
+      "Coordinate sprints and ensure timely delivery",
+    ],
+    requirements: [
+      "5+ years in Product Management, preferably SaaS",
+      "Experience with Agile methodologies",
+      "Strong stakeholder management skills",
+      "Data-driven decision making",
+    ],
+    benefits: [
+      "Stock option plan",
+      "Quarterly team offsites",
+      "Comprehensive health coverage",
+      "Gym membership reimbursement",
+    ],
+  },
+  {
+    id: 4,
+    title: "QA Engineer",
+    category: "Quality Assurance",
+    company: {
+      name: "TestFlow",
+      logo: textflow,
+      about:
+        "TestFlow delivers automated testing frameworks for enterprise clients. We’re a lean 25-person team focused on quality, speed, and reliability.",
+      website: "https://testflow.io",
+      industry: "Quality Assurance",
+      size: "20–30 employees",
+      headquarters: "Chennai, India",
+    },
+    location: "Chennai, India",
+    type: "Full Time",
+    level: "Mid Level",
+    salary: "₹7L – ₹10L",
+    isRemote: false,
+    postedDate: "2025-04-22",
+    applyLink: "https://testflow.io/jobs/qa-engineer",
+    description:
+      "Ensure the quality and reliability of our web and mobile applications through automated and manual testing.",
+    applicants: 100,
+    responsibilities: [
+      "Develop and maintain automated test scripts",
+      "Perform regression and smoke testing",
+      "Report and track bugs in Jira",
+      "Collaborate with developers to resolve issues",
+    ],
+    requirements: [
+      "3+ years in QA engineering roles",
+      "Experience with Selenium, Cypress, or Playwright",
+      "Strong analytical and debugging skills",
+      "Familiarity with CI/CD pipelines",
+    ],
+    benefits: [
+      "Remote work options",
+      "Annual bonus",
+      "Learning & certification budget",
+      "Paid time off and sick leave",
+    ],
+  },
+  {
+    id: 5,
+    title: "Content Writer",
+    category: "Content Writing",
+    company: {
+      name: "StoryCraft",
+      logo: storyCraft,
+      about:
+        "StoryCraft is a creative agency specializing in brand storytelling and digital content. Our 15-member team crafts narratives that resonate.",
+      website: "https://storycraft.co",
+      industry: "Marketing / Creative",
+      size: "10–20 employees",
+      headquarters: "Pune, India",
+    },
+    location: "Pune, India",
+    type: "Part Time",
+    level: "Entry Level",
+    salary: "₹4L – ₹6L",
+    isRemote: true,
+    postedDate: "2025-04-28",
+    applyLink: "https://storycraft.co/careers/content-writer",
+    description:
+      "Write engaging blog posts, social media copy, and website content that aligns with brand voice and SEO best practices.",
+    applicants: 150,
+    responsibilities: [
+      "Research industry topics and trends",
+      "Produce 3–4 blog articles per week",
+      "Optimize content for search engines",
+      "Coordinate with designers for visual assets",
+    ],
+    requirements: [
+      "Excellent writing and editing skills",
+      "Basic SEO knowledge",
+      "Ability to meet deadlines",
+      "Portfolio of published work",
+    ],
+    benefits: [
+      "Flexible schedule",
+      "Work-from-home setup",
+      "Opportunities for growth",
+      "Creative collaboration environment",
+    ],
+  },
+  {
+    id: 6,
+    title: "Sales Executive",
+    category: "Sales",
+    company: {
+      name: "SphereSales",
+      logo: SphereSales,
+      about:
+        "SphereSales offers a cloud-based CRM platform to SMEs. Growing rapidly since 2019, our 60-member team is spread across three offices in India.",
+      website: "https://spheresales.com",
+      industry: "Software / Sales",
+      size: "60–80 employees",
+      headquarters: "Delhi, India",
+    },
+    location: "Delhi, India",
+    type: "Full Time",
+    level: "Mid Level",
+    salary: "₹9L – ₹14L",
+    isRemote: false,
+    postedDate: "2025-05-02",
+    applyLink: "https://spheresales.com/jobs/sales-executive",
+    description:
+      "Drive new business by prospecting leads, conducting demos, and closing deals for our CRM solution.",
+    applicants: 35,
+    responsibilities: [
+      "Identify and qualify sales leads",
+      "Deliver product demos to potential clients",
+      "Negotiate contracts and close deals",
+      "Maintain CRM records and forecast pipeline",
+    ],
+    requirements: [
+      "2+ years in B2B sales",
+      "Strong communication and negotiation skills",
+      "Familiarity with CRM software",
+      "Target-driven mindset",
+    ],
+    benefits: [
+      "Attractive commission structure",
+      "Health insurance",
+      "Team outings and events",
+      "Professional development stipend",
+    ],
+  },
+];

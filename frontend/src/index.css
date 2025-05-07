@@ -1,7 +1,128 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@theme {
+  --shadow-purple: #f5f6ff;
+  --text-muted: #6b7280;
+}
+
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: "Inter", sans-serif;
+  background: #fafcff;
 }
+
+button,
+a,
+.interactive {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+@layer components {
+  .interactive {
+    @apply transition-all duration-150 ease-in-out
+           active:scale-95      /* quick shrink */
+           active:opacity-80    /* slight fade */
+           active:translate-y-0.5; /* tiny “press down” */
+  }
+  .input-with-muted-placeholder {
+    @apply w-full py-3.5 px-4 rounded-full bg-white; /* your common styles */
+
+    /* now style the placeholder explicitly */
+    &::placeholder {
+      color: #6b7280; /* your muted gray */
+      opacity: 1; /* ensure full opacity if you’ve tweaked defaults */
+    }
+
+    /* optional: focus state */
+    &:focus {
+      outline: none;
+      /* you can even @apply ring-2 ring-active etc. */
+    }
+  }
+}
+
+@layer utilities {
+  /* brand-color backgrounds */
+  .bg-green {
+    background-color: #1fc0a9;
+  }
+  .bg-light-purple {
+    background-color: #f5f6ff;
+  }
+  .bg-primary {
+    background-color: #fafcff;
+  }
+  .bg-dark {
+    background-color: #1f2937;
+  }
+  .bg-gray {
+    background-color: #6b7280;
+  }
+  .bg-logo {
+    background-color: #edeff5;
+  }
+
+  /* matching text colors, if you like */
+  .text-primary {
+    color: #1f2937;
+  }
+  .text-active {
+    color: #1fc0a9;
+  }
+  .text-muted {
+    color: #6b7280;
+  }
+  .border-color {
+    color: #6b7280;
+  }
+
+  .nav-container {
+    @apply w-full px-[20px] lg:px-[85px] mx-auto;
+  }
+  .section-container {
+    @apply max-w-[1314px] mx-auto px-[20px];
+  }
+  .btn-primary {
+    @apply py-2 px-4 bg-[#1fc0a9] text-white rounded-full w-max font-semibold hover:bg-[#12AA94] transition-colors duration-300 sm:cursor-pointer;
+  }
+}
+
+.swiper-pagination {
+  bottom: -25px !important; /* push below slides */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: #d1d5db !important;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  margin: 0 4px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #3b82f6 !important;
+}
+
+/* .swiper-pagination {
+  bottom: 16px !important;
+}
+
+.swiper-pagination-bullet {
+  background: #d1d5db;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  margin: 0 4px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #3b82f6;
+}
+ */
