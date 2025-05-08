@@ -51,6 +51,7 @@ export const jobDetails = [
       "Work-from-home stipend",
       "Annual team retreats",
     ],
+    isFeatured: true,
   },
   {
     id: 2,
@@ -94,6 +95,7 @@ export const jobDetails = [
       "Annual learning budget",
       "Flexible working hours",
     ],
+    isFeatured: true,
   },
   {
     id: 3,
@@ -137,6 +139,7 @@ export const jobDetails = [
       "Comprehensive health coverage",
       "Gym membership reimbursement",
     ],
+    isFeatured: true,
   },
   {
     id: 4,
@@ -180,6 +183,7 @@ export const jobDetails = [
       "Learning & certification budget",
       "Paid time off and sick leave",
     ],
+    isFeatured: true,
   },
   {
     id: 5,
@@ -223,6 +227,7 @@ export const jobDetails = [
       "Opportunities for growth",
       "Creative collaboration environment",
     ],
+    isFeatured: true,
   },
   {
     id: 6,
@@ -266,5 +271,6 @@ export const jobDetails = [
       "Team outings and events",
       "Professional development stipend",
     ],
+    isFeatured: true,
   },
 ];

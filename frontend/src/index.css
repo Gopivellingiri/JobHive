@@ -77,6 +77,10 @@ a,
   .text-muted {
     color: #6b7280;
   }
+  .text-light-gray {
+    color: #6b7280;
+  }
+
   .border-color {
     color: #6b7280;
   }
@@ -88,7 +92,10 @@ a,
     @apply max-w-[1314px] mx-auto px-[20px];
   }
   .btn-primary {
-    @apply py-2 px-4 bg-[#1fc0a9] text-white rounded-full w-max font-semibold hover:bg-[#12AA94] transition-colors duration-300 sm:cursor-pointer;
+    @apply py-3 px-4 bg-[#1fc0a9] text-white rounded-full w-max font-semibold hover:bg-[#12AA94] transition-colors duration-300 sm:cursor-pointer;
+  }
+  .btn-secondary {
+    @apply py-3 px-4 bg-[#1f2937] text-white rounded-full w-max font-semibold hover:bg-[#171E29] transition-colors duration-300 sm:cursor-pointer;
   }
 }
 

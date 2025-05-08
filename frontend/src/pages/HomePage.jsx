@@ -1,10 +1,15 @@
 import React from "react";
-import HeroSection from "../sections/HeroSection";
+import HeroSection from "../sections/Home/HeroSection";
 import Navbar from "../components/Navbar";
 import bgPattern from "../assets/bg-light-purple.png";
-import TrendingJobs from "../sections/TrendingJobs";
+import TrendingJobs from "../sections/Home/TrendingJobs";
 import Layout from "../layout/Layout";
-import JobFields from "../sections/JobFields";
+import JobFields from "../sections/Home/JobFields";
+import HighLightedJobs from "../sections/Home/HighLightedJobs";
+import JobReviews from "../sections/Home/JobReviews";
+import FormSection from "../sections/Home/FormSection";
+import StayAheadSection from "../sections/Home/StayAheadSection";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -24,6 +29,13 @@ const HomePage = () => {
             <JobFields />
           </Layout>
         </div>
+        <Layout>
+          <HighLightedJobs />
+          <JobReviews />
+          <FormSection />
+          <StayAheadSection />
+          <Footer />
+        </Layout>
       </div>
     </div>
   );

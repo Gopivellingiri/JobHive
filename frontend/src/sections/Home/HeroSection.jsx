@@ -1,6 +1,5 @@
-import React from "react";
-import HeroImg from "../assets/hero-img.png";
-import JobSearchBar from "../components/JobSearchBar";
+import HeroImg from "../../assets/hero-img.png";
+import JobSearchBar from "../../components/JobSearchBar";
 
 const HeroSection = () => {
   return (

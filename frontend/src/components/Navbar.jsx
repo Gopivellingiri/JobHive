@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  // watch the scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
     { to: "/", label: "Home", end: true },
@@ -14,7 +25,11 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative nav-container flex items-center justify-between mt-5">
+    <nav
+      className={`nav-container flex items-center justify-between  overflow-hidden fixed top-0 left-0 right-0 ${
+        scrolled ? "shadow-lg bg-primary" : "shadow-none"
+      }  py-4 z-60`}
+    >
       <h1 className="text-2xl font-bold text-primary">JobHive</h1>
 
       {/* menu button */}
