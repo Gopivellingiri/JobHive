@@ -62,7 +62,7 @@ const JobCard = ({ jobDetails }) => {
 
   return (
     <Link to={`/job-details/${jobDetails?.id}`}>
-      <div className="px-4 py-6 bg-white border-2 border-color rounded-xl">
+      <div className="px-4 py-6 bg-white border-2 border-color rounded-xl min-h-[320px]">
         <div className="flex items-center gap-2">
           <div className="w-12 h-12 rounded-md bg-logo p-1.5 overflow-hidden">
             <img
@@ -75,12 +75,10 @@ const JobCard = ({ jobDetails }) => {
             <h5 className="text-base  text-primary sm:text-xl font-semibold">
               {jobDetails?.title}
             </h5>
-            <div className="flex items-center gap-2 text-xs sm:text-base">
-              <span className="text-muted font-medium">
-                {jobDetails?.company?.name}
-              </span>
-              <span className="text-muted">•</span>
-              <span className=" text-muted font-medium">
+            <div className="flex items-center gap-2 text-xs sm:text-base text-slate-500">
+              <span className=" font-medium">{jobDetails?.company?.name}</span>
+              <span className="">•</span>
+              <span className="  font-medium">
                 {jobDetails?.applicants} Applicants
               </span>
             </div>
@@ -108,17 +106,17 @@ const JobCard = ({ jobDetails }) => {
                 : "bg-yellow-100 text-yellow-700"
             }`}
           >
-            {jobDetails?.isRemote ? "Remote" : "On-site"}
+            {jobDetails?.workArrangements}
           </span>
         </div>
-        <div className="text-sm sm:text-base text-primary font-semibold">
+        <div className="text-sm sm:text-base text-slate-500 font-medium">
           <p>{truncateDiscription(jobDetails?.company?.about, 100)}</p>
         </div>
         <div className="my-5">
           <hr className="border border-color" />
         </div>
         <div className="flex items-center justify-between text-sm sm:text-base font-semibold">
-          <span>
+          <span className="text-slate-500">
             <b className="text-primary">{jobDetails?.salary} </b> / annum
           </span>
 

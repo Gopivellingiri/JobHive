@@ -24,7 +24,7 @@ export const jobDetails = [
     type: "Full Time",
     level: "Mid Level",
     salary: "₹10L – ₹15L",
-    isRemote: true,
+
     postedDate: "2025-05-01",
     applyLink: "https://technova.io/careers/1234",
     description: `
@@ -52,6 +52,9 @@ export const jobDetails = [
       "Annual team retreats",
     ],
     isFeatured: true,
+    workArrangements: "Remote",
+    education: ["Bachelor’s in Computer Science"],
+    skills: ["React", "JavaScript", "Tailwind CSS", "HTML5"],
   },
   {
     id: 2,
@@ -71,7 +74,6 @@ export const jobDetails = [
     type: "Full Time",
     level: "Mid Level",
     salary: "₹8L – ₹12L",
-    isRemote: true,
     postedDate: "2025-04-25",
     applyLink: "https://datascape.ai/careers/data-analyst",
     description:
@@ -96,6 +98,9 @@ export const jobDetails = [
       "Flexible working hours",
     ],
     isFeatured: true,
+    workArrangements: "Remote",
+    education: ["Bachelor’s in Statistics"],
+    skills: ["SQL", "Python", "Tableau", "Excel"],
   },
   {
     id: 3,
@@ -115,7 +120,6 @@ export const jobDetails = [
     type: "Full Time",
     level: "Senior",
     salary: "₹15L – ₹20L",
-    isRemote: false,
     postedDate: "2025-04-20",
     applyLink: "https://innovio.app/careers/product-manager",
     description:
@@ -140,6 +144,9 @@ export const jobDetails = [
       "Gym membership reimbursement",
     ],
     isFeatured: true,
+    workArrangements: "On-site",
+    education: ["Master’s in Business Administration"],
+    skills: ["Roadmapping", "User Research", "Agile", "Stakeholder Management"],
   },
   {
     id: 4,
@@ -159,7 +166,6 @@ export const jobDetails = [
     type: "Full Time",
     level: "Mid Level",
     salary: "₹7L – ₹10L",
-    isRemote: false,
     postedDate: "2025-04-22",
     applyLink: "https://testflow.io/jobs/qa-engineer",
     description:
@@ -184,6 +190,9 @@ export const jobDetails = [
       "Paid time off and sick leave",
     ],
     isFeatured: true,
+    workArrangements: "On-site",
+    education: ["Bachelor’s in Computer Engineering"],
+    skills: ["Selenium", "Cypress", "API Testing", "Jira"],
   },
   {
     id: 5,
@@ -203,7 +212,6 @@ export const jobDetails = [
     type: "Part Time",
     level: "Entry Level",
     salary: "₹4L – ₹6L",
-    isRemote: true,
     postedDate: "2025-04-28",
     applyLink: "https://storycraft.co/careers/content-writer",
     description:
@@ -228,6 +236,9 @@ export const jobDetails = [
       "Creative collaboration environment",
     ],
     isFeatured: true,
+    workArrangements: "Remote",
+    education: ["Bachelor’s in English"],
+    skills: ["SEO", "Copywriting", "WordPress", "Social Media"],
   },
   {
     id: 6,
@@ -247,7 +258,6 @@ export const jobDetails = [
     type: "Full Time",
     level: "Mid Level",
     salary: "₹9L – ₹14L",
-    isRemote: false,
     postedDate: "2025-05-02",
     applyLink: "https://spheresales.com/jobs/sales-executive",
     description:
@@ -272,5 +282,8 @@ export const jobDetails = [
       "Professional development stipend",
     ],
     isFeatured: true,
+    workArrangements: "Hybrid",
+    education: ["Bachelor’s in Business Administration"],
+    skills: ["Negotiation", "CRM", "Lead Generation", "Presentation"],
   },
 ];

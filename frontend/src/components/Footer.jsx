@@ -127,23 +127,77 @@ const Footer = () => {
       <div className="w-full py-3 ">
         <hr className="border border-color" />
       </div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row gap-2 items-center sm:justify-between">
         <div className="flex items-center gap-3">
-          <div className="text-xl w-7 h-7 rounded-full border-2 border-text-primary flex items-center justify-center group hover:border-transparent hover:bg-gray-800 duration-300 transition-colors p-0.5 ">
-            <RiFacebookFill className="text-primary group-hover:text-white transition-all duration-300 cursor-pointer" />
-          </div>
-          <div className="text-xl w-7 h-7 rounded-full border-2 border-text-primary flex items-center justify-center group hover:border-transparent hover:bg-gray-800 duration-300 transition-colors p-0.5">
-            <TbBrandInstagramFilled className="text-primary group-hover:text-white transition-all duration-300 cursor-pointer" />
-          </div>
-          <div className="text-xl w-7 h-7 rounded-full border-2 border-text-primary flex items-center justify-center group hover:border-transparent hover:bg-gray-800 duration-300 transition-colors ">
-            <FaXTwitter className="text-primary group-hover:text-white transition-all duration-300 cursor-pointer p-0.5" />
-          </div>
-          <div className="text-xl w-7 h-7 rounded-full border-2 border-text-primary flex items-center justify-center group hover:border-transparent hover:bg-gray-800 duration-300 transition-colors ">
-            <FaLinkedinIn className="text-primary group-hover:text-white transition-all duration-300 cursor-pointer p-0.5" />
-          </div>
-          <div className="text-xl w-7 h-7 rounded-full border-2 border-text-primary flex items-center justify-center group hover:border-transparent hover:bg-gray-800 duration-300 transition-colors ">
-            <IoLogoYoutube className="text-primary group-hover:text-white transition-all duration-300 cursor-pointer p-0.5" />
-          </div>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      w-7 h-7 rounded-full border-2 border-text-primary 
+      flex items-center justify-center group 
+      hover:border-transparent hover:bg-gray-800 
+      transition-colors duration-300 p-0.5
+    "
+          >
+            <RiFacebookFill className="text-primary group-hover:text-white transition-all duration-300" />
+          </a>
+
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      w-7 h-7 rounded-full border-2 border-text-primary 
+      flex items-center justify-center group 
+      hover:border-transparent hover:bg-gray-800 
+      transition-colors duration-300 p-0.5
+    "
+          >
+            <TbBrandInstagramFilled className="text-primary group-hover:text-white transition-all duration-300" />
+          </a>
+
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      w-7 h-7 rounded-full border-2 border-text-primary 
+      flex items-center justify-center group 
+      hover:border-transparent hover:bg-gray-800 
+      transition-colors duration-300 p-0.5
+    "
+          >
+            <FaXTwitter className="text-primary group-hover:text-white transition-all duration-300" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      w-7 h-7 rounded-full border-2 border-text-primary 
+      flex items-center justify-center group 
+      hover:border-transparent hover:bg-gray-800 
+      transition-colors duration-300 p-0.5
+    "
+          >
+            <FaLinkedinIn className="text-primary group-hover:text-white transition-all duration-300" />
+          </a>
+
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+      w-7 h-7 rounded-full border-2 border-text-primary 
+      flex items-center justify-center group 
+      hover:border-transparent hover:bg-gray-800 
+      transition-colors duration-300 p-0.5
+    "
+          >
+            <IoLogoYoutube className="text-primary group-hover:text-white transition-all duration-300" />
+          </a>
         </div>
         <div className="font-semibold">
           <p>&copy; {new Date().getFullYear()} JobHive. All rights reserved.</p>{" "}
